@@ -1,7 +1,6 @@
 package helper;
 
 import io.restassured.http.ContentType;
-import io.restassured.response.Response;
 import model.AuthRequest;
 import model.CreateCompanyRequest;
 import model.CreateEmployeeRequest;

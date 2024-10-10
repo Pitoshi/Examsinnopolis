@@ -5,7 +5,6 @@ import data.EmployeeData;
 import helper.ConfProperties;
 import helper.EmployeeApiHelper;
 import io.restassured.RestAssured;
-import io.restassured.response.ValidatableResponse;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
