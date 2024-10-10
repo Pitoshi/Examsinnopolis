@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "createDateTime": {
+          "type": "string"
+        },
+        "lastChangedDateTime": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "middleName": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "birthdate": {
+          "type": "string"
+        },
+        "avatar_url": {
+          "type": "string"
+        },
+        "companyId": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "isActive",
+        "firstName",
+        "lastName",
+        "middleName",
+        "phone",
+        "email",
+        "birthdate",
+        "avatar_url",
+        "companyId"
+      ]
+    }
+  ]
+}
