@@ -1,6 +1,5 @@
 package helper;
 
-import io.restassured.common.mapper.TypeRef;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import model.AuthRequest;
@@ -8,10 +7,7 @@ import model.CreateCompanyRequest;
 import model.CreateEmployeeRequest;
 import model.EmployeeResponse;
 
-import java.util.List;
-
 import static io.restassured.RestAssured.given;
-
 public class EmployeeApiHelper {
 
     public String getToken() {
@@ -60,7 +56,7 @@ public class EmployeeApiHelper {
     }
 
     public void deleteCompany(String token, int companyId) {
-        final Response response = given()
+        given()
                 .basePath("company/delete/" + companyId)
                 .header("x-client-token", token)
                 .contentType("application/json")

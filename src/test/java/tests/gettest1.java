@@ -69,11 +69,11 @@ public class gettest1 {
     @Tag("Негативные")
     @DisplayName("Контракт - получаем список сотрудников - ID компании текст")
     public void getEmployeesFromCompanyWithTextID() {
-        final ValidatableResponse body = given()
+        given()
                 .when()
                 .get("/employee?company={id}", "Компания")
                 .then()
                 .statusCode(400)
-                .body("error", equalTo("Bad Request"), new Object[]{});
+                .body("error", equalTo("Bad Request"));
     }
 }

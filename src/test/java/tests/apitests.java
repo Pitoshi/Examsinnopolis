@@ -4,15 +4,14 @@ import data.CompanyData;
 import data.EmployeeData;
 import data.EmployeePatchData;
 import helper.ConfProperties;
+import helper.EmployeeApiHelper;
 import io.restassured.RestAssured;
-import io.restassured.response.ValidatableResponse;
 import model.EmployeeResponse;
 import model.PatchEmployeeRequest;
 import org.junit.jupiter.api.*;
-import helper.EmployeeApiHelper;
 
-import static org.hamcrest.Matchers.*;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
 public class apitests {
 
@@ -77,7 +76,7 @@ public class apitests {
     @Tag("Негативные")
     @DisplayName("Контракт - редактируем сотрудника - несуществующий ID")
     public void patchEmployeeWithNonExistentId() {
-        int nonExistentId = 99999; // Предполагаем, что этот ID не существует
+        // Предполагаем, что этот ID не существует
 
         // Ожидаем статус 404 Not Found
     }
