@@ -14,8 +14,6 @@ import static io.restassured.RestAssured.given;
 
 public class EmployeeApiHelper {
 
-    private String token;
-
     public String getToken() {
         String username = ConfProperties.getProperty("username");
         String password = ConfProperties.getProperty("password");
@@ -61,19 +59,6 @@ public class EmployeeApiHelper {
                         .body().as(EmployeeResponse.class);
     }
 
-    public List<EmployeeResponse> getListOfEmployees(int companyId) {
-        return
-                given()
-                        .basePath("employee")
-                        .queryParam("company", companyId)
-                        .contentType("application/json")
-                        .when()
-                        .get()
-                        //.body().as(new List<EmployeeResponse> );
-                        .body().as(new TypeRef<>() {
-                        });
-    }
-
     public void deleteCompany(String token, int companyId) {
         final Response response = given()
                 .basePath("company/delete/" + companyId)
@@ -84,8 +69,4 @@ public class EmployeeApiHelper {
     }
 
 
-    public EmployeeResponse createEmployee(String token, int companyIdGeneral, Object defaultEmployeeData) {
-        this.token = token;
-        return null;
-    }
 }

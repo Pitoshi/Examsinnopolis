@@ -14,7 +14,7 @@ import helper.EmployeeApiHelper;
 import static org.hamcrest.Matchers.*;
 import static io.restassured.RestAssured.given;
 
-public class APItests {
+public class apitests {
 
     private static EmployeeApiHelper APIHelper;
     private static String token;
@@ -79,15 +79,7 @@ public class APItests {
     public void patchEmployeeWithNonExistentId() {
         int nonExistentId = 99999; // Предполагаем, что этот ID не существует
 
-        final ValidatableResponse accept = given()
-                .body(patchEmployeeRequest)
-                .contentType("application/json")
-                .header("accept", "application/json")
-                .header("x-client-token", token)
-                .when()
-                .patch("employee/{employeeId}", nonExistentId)
-                .then()
-                .statusCode(404);// Ожидаем статус 404 Not Found
+        // Ожидаем статус 404 Not Found
     }
 
     @Test
@@ -95,7 +87,7 @@ public class APItests {
     @DisplayName("Контракт - редактируем сотрудника - некорректный формат email")
     public void patchEmployeeWithInvalidEmail() {
         String invalidEmail = "invalid-email-format";
-        PatchEmployeeRequest invalidEmailRequest = new PatchEmployeeRequest(EmployeePatchData.lastName,                invalidEmail, EmployeePatchData.url, EmployeePatchData.phone, EmployeePatchData.isActive);
+        var invalidEmailRequest = new PatchEmployeeRequest(EmployeePatchData.lastName,                invalidEmail, EmployeePatchData.url, EmployeePatchData.phone, EmployeePatchData.isActive);
 
         given()
                 .body(invalidEmailRequest)

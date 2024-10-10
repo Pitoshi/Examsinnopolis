@@ -15,7 +15,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.greaterThanOrEqualTo;
 
-public class getTest1 {
+public class gettest1 {
 
     private static EmployeeApiHelper APIHelper;
     private static String token;
@@ -69,11 +69,11 @@ public class getTest1 {
     @Tag("Негативные")
     @DisplayName("Контракт - получаем список сотрудников - ID компании текст")
     public void getEmployeesFromCompanyWithTextID() {
-        given()
+        final ValidatableResponse body = given()
                 .when()
                 .get("/employee?company={id}", "Компания")
                 .then()
                 .statusCode(400)
-                .body("error", equalTo("Bad Request"), new Object[]{})
+                .body("error", equalTo("Bad Request"), new Object[]{});
     }
 }

@@ -20,7 +20,4 @@ public class DBHelper {
         return preparedStatement.executeQuery();
     }
 
-    public Connection connectToDB() {
-        return null;
-    }
 }

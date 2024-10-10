@@ -5,32 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18e094b9-dcf1-4904-828b-2c91467730e5" name="Changes" comment="Автотесты для аттестации. Написал автотесты с негативными и позитивными сценариями.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/data/CompanyData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/data/EmployeeData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/data/EmployeePatchData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/helper/ConfProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/helper/DBHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/helper/EmployeeApiHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/AuthRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/CreateCompanyRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/CreateEmployeeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/EmployeeResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/PatchEmployeeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/APItests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BuisnessLogicalTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CreateEmployeeNegativePositiveTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/JSONSTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/getTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/TestDesign.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/conf.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/employees-schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helper/EmployeeApiHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helper/EmployeeApiHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/CreateEmployeeRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/CreateEmployeeRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/APItests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/apitests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/getTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/gettest1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,22 +56,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.getTest1.getEmployeesFromCompanyWithTextID">
-    <configuration name="APItests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Exam__3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.APItests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="JSONSTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exam__3" />
       <extension name="coverage">
@@ -123,7 +88,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="getTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="apitests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exam__3" />
       <extension name="coverage">
         <pattern>
@@ -132,13 +97,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.getTest1" />
+      <option name="MAIN_CLASS_NAME" value="tests.apitests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="getTest1.getEmployeesFromCompanyWithTextID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="gettest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exam__3" />
       <extension name="coverage">
         <pattern>
@@ -147,7 +112,22 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.getTest1" />
+      <option name="MAIN_CLASS_NAME" value="tests.gettest1" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gettest1.getEmployeesFromCompanyWithTextID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Exam__3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.gettest1" />
       <option name="METHOD_NAME" value="getEmployeesFromCompanyWithTextID" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -169,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.getTest1.getEmployeesFromCompanyWithTextID" />
-        <item itemvalue="JUnit.APItests" />
+        <item itemvalue="JUnit.gettest1.getEmployeesFromCompanyWithTextID" />
+        <item itemvalue="JUnit.apitests" />
         <item itemvalue="JUnit.JSONSTests" />
         <item itemvalue="JUnit.JSONSTests.validateJSONSchemaForGetEmployeeById" />
-        <item itemvalue="JUnit.getTest1" />
+        <item itemvalue="JUnit.gettest1" />
       </list>
     </recent_temporary>
   </component>
@@ -186,6 +166,14 @@
       <option name="presentableId" value="Default" />
       <updated>1728338969516</updated>
     </task>
+    <task id="LOCAL-00001" summary="Автотесты для аттестации. Написал автотесты с негативными и позитивными сценариями.">
+      <created>1728601209999</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728601209999</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,7 +195,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/APItests.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/tests/apitests.java</url>
           <line>89</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
